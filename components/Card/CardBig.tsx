@@ -32,8 +32,6 @@ const CardBig = ({
       <Image
         className="mobile:max-h-[600px] max-h-[750px]"
         src={image}
-        width="100%"
-        height={"100%"}
         layout="fill"
         objectFit="fill"
         alt="hero image"
