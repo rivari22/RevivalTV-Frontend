@@ -18,7 +18,7 @@ const Button = ({
     <button
       className={`bg-[#2E4DEC] mx-auto rounded-full py-[10px] text-white text-lg ${
         variantMap[variant || "normal"]
-      }`}
+      }  ${variant === "large" ? "mobile:w-full md:w-auto" : "w-auto"} `}
       onClick={(e) => {
         e.preventDefault();
         onClick();

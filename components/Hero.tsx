@@ -1,7 +1,8 @@
+import { NextRouter } from "next/router";
 import React from "react";
 import Button from "./Button/Button";
 
-const Hero = () => {
+const Hero = ({ router }: { router: NextRouter }) => {
   return (
     <section className="mobile:h-[582px] xl:h-[750px] relative bg-[url('/images/hero_image_1.png')] bg-center mobile:bg-[length:872px_572px] xl:bg-contain">
       <div className="mobile:h-[572px] xl:h-[750px] w-full">
@@ -14,7 +15,11 @@ const Hero = () => {
             record anmd get a lot memories to share, lighlty and fast like a
             lightning
           </p>
-          <Button onClick={() => undefined} label="GET NOW" variant="normal" />
+          <Button
+            onClick={() => router.push("/detail")}
+            label="GET NOW"
+            variant="normal"
+          />
         </div>
       </div>
     </section>

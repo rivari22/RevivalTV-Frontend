@@ -5,7 +5,7 @@ module.exports = {
   ],
   theme: {
     screens: {
-      'mobile': '400px',
+      'mobile': '370px',
       'sm': '640px',
       'md': '768px',
       'lg': '1024px',
@@ -15,4 +15,11 @@ module.exports = {
     extend: {},
   },
   plugins: [],
+  variants: {
+    extends: {
+      display: ['group-focus'],
+      opacity: ['group-focus'],
+      inset: ['group-focus']
+    }
+  }
 }

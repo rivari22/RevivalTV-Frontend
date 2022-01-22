@@ -27,7 +27,7 @@ const reviewLists = [
 
 const Review = () => {
   return (
-    <section className="xl:m-[100px_150px_0_150px] mobile:m-[52px_32px_0_32px] xl:h-[538px] pb-[1038px]">
+    <section className="xl:m-[100px_150px_0_150px] mobile:m-[52px_32px_0_32px] xl:h-[538px] pb-[1038px]" id="review">
       <h1 className="xl:text-[64px] mobile:text-[36px] lead-[104px] font-bold max-w-[531px] xl:mb-[80px] mobile:mb-[37px]">
         What Our “Pilots Are Saying
       </h1>
