@@ -1,7 +1,6 @@
 import Image from "next/image";
 import React from "react";
 import ListFooter from "./List/ListFooter";
-import LogoAutodrone from "../public/images/Logo-autodrone.png";
 
 const listFooter = [
   {
@@ -29,7 +28,7 @@ const Footer = () => {
       <div className="w-[260px]">
         <div className="flex gap-5 mb-6">
           <Image
-            src={LogoAutodrone}
+            src={'/images/Logo-autodrone.png'}
             width={68}
             height={32}
             alt="logo autodrone"
