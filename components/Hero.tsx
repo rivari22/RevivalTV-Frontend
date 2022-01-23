@@ -18,7 +18,7 @@ const Hero = ({ router }: { router: NextRouter }) => {
           <Button
             onClick={() => router.push("/detail")}
             label="GET NOW"
-            variant="normal"
+            size="normal"
           />
         </div>
       </div>

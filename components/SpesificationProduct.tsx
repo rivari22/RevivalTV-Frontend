@@ -94,7 +94,7 @@ const SpesificationProduct = () => {
         <Button
           label="ORDER IT NOW"
           onClick={() => undefined}
-          variant="large"
+          size="large"
         />
       </div>
     </section>
