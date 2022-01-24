@@ -1,5 +1,6 @@
 import React from "react";
-import CardReview from "./Card/CardReview";
+import { Fade, Zoom } from "react-awesome-reveal";
+import CardReview from "../../components/Card/CardReview";
 
 const reviewLists = [
   {
@@ -27,13 +28,20 @@ const reviewLists = [
 
 const Review = () => {
   return (
-    <section className="xl:m-[100px_150px_0_150px] mobile:m-[52px_32px_0_32px] xl:h-[538px] pb-[1038px]" id="review">
+    <section
+      className="xl:m-[100px_150px_0_150px] mobile:m-[52px_32px_0_32px] xl:h-[538px] pb-[1038px]"
+      id="review"
+    >
+      <Fade>
       <h1 className="xl:text-[64px] mobile:text-[36px] lead-[104px] font-bold max-w-[531px] xl:mb-[80px] mobile:mb-[37px]">
         What Our “Pilots Are Saying
       </h1>
+      </Fade>
       <div className="flex xl:gap-[50px] mobile:gap-4 mobile:flex-col xl:flex-row">
         {reviewLists.map((item, index) => (
-          <CardReview key={index} {...item} />
+          <Zoom key={index}>
+          <CardReview {...item} key={index} />
+          </Zoom>
         ))}
       </div>
     </section>

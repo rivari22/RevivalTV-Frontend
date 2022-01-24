@@ -1,12 +1,12 @@
 import type { NextPage } from "next";
 import { useRouter } from "next/router";
-import AdvertismentSection from "../components/Advertisment";
-import BenefitSection from "../components/Benefit";
-import Footer from "../components/Footer";
-import HeroSection from "../components/Hero";
+import AdvertismentSection from "../containers/Home/Advertisment";
+import BenefitSection from "../containers/Home/Benefit";
+import Footer from "../components/Footer/Footer";
+import HeroSection from "../containers/Home/Hero";
 import Navbar from "../components/Navbar/Navbar";
-import NewProductsSection from "../components/NewProducts";
-import ReviewSection from "../components/Review";
+import NewProductsSection from "../containers/Home/NewProducts";
+import ReviewSection from "../containers/Home/Review";
 
 const Home: NextPage = () => {
   const router = useRouter();

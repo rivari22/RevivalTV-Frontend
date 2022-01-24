@@ -1,8 +1,8 @@
 import React from "react";
-import DescriptionDetailProductSection from "../components/DescriptionDetailProduct";
-import Footer from "../components/Footer";
+import DescriptionDetailProductSection from "../containers/Detail/DescriptionDetailProduct";
+import Footer from "../components/Footer/Footer";
 import Navbar from "../components/Navbar/Navbar";
-import SpesificationProductSection from "../components/SpesificationProduct";
+import SpesificationProductSection from "../containers/Detail/SpesificationProduct";
 
 const Detail = () => {
   return (

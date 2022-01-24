@@ -1,6 +1,6 @@
 import Image from "next/image";
 import React from "react";
-import ListFooter from "./List/ListFooter";
+import ListFooter from "./ListFooter";
 
 const listFooter = [
   {
