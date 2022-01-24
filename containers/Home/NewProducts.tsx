@@ -1,6 +1,6 @@
 import { NextRouter } from "next/router";
 import React, { useMemo } from "react";
-import { Fade, Slide } from "react-awesome-reveal";
+import { Fade, Zoom } from "react-awesome-reveal";
 import CardProduct from "../../components/Card/CardProduct";
 
 const NewProducts = ({ router }: { router: NextRouter }) => {
@@ -46,9 +46,9 @@ const NewProducts = ({ router }: { router: NextRouter }) => {
       </Fade>
       <div className="flex xl:ml-[200px] gap-[50px] xl:overflow-auto scrollbar-hide xl:flex-nowrap mobile:flex-wrap mobile:justify-center xl:justify-start xl:pr-10 mobile:pr-0">
         {newProductList.map((item, index) => (
-          <Slide key={index} delay={index !== 2 ? 500 * index : 0} direction='right'>
+          <Zoom key={index} delay={index !== 2 ? 500 * index : 0} direction='right'>
             <CardProduct {...item} key={index}  />
-          </Slide>
+          </Zoom>
         ))}
       </div>
     </section>
